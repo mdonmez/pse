@@ -1,6 +1,6 @@
 [project]
 name = "pse"
-version = "0.1.0"
+version = "0.1.1"
 description = "Search Python packages across PyPI, Conda channels, and compatible indexes."
 readme = "README.md"
 authors = [
