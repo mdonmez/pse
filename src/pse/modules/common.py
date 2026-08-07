@@ -13,10 +13,11 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from html.parser import HTMLParser
+from importlib.metadata import version as package_version
 from pathlib import Path
 from typing import Any
 
-VERSION = "2.0.0"
+VERSION = package_version("pse")
 PYPI_INDEX = "https://pypi.org/simple/"
 CONDA_CHANNEL = "conda-forge"
 CACHE_DIR = Path(tempfile.gettempdir()) / "pse-cache"

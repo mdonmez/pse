@@ -18,7 +18,7 @@ packages without installing packages or using a package manager at runtime.
 You can run `pse` directly with `uvx`, `pipx` or `pixi exec` for a quick search without installing anything.
 
 ```powershell
-uvx pse "pkg"
+uvx pse pkg
 ```
 
 </details>
@@ -27,7 +27,7 @@ uvx pse "pkg"
 <summary>pipx</summary>
 
 ```powershell
-pipx run pse "pkg"
+pipx run pse pkg
 ```
 
 </details>
@@ -36,7 +36,7 @@ pipx run pse "pkg"
 <summary>pixi exec</summary>
 
 ```powershell
-pixi exec pse "pkg"
+pixi exec pse pkg
 ```
 
 </details>
@@ -47,7 +47,7 @@ You can install `pse` as global command with `uv tool install` for repeated use:
 
 ```powershell
 uv tool install pse
-pse "pkg"
+pse pkg
 ```
 
 ## Use-cases
@@ -55,25 +55,25 @@ pse "pkg"
 Search for a package on PyPI and Conda:
 
 ```powershell
-pse "pkg"
+pse pkg
 ```
 
 Search an additional PyPI index:
 
 ```powershell
-pse "pkg" --pypi-index https://download.pytorch.org/whl/cu126
+pse pkg --pypi-index https://download.pytorch.org/whl/cu126
 ```
 
 Search an additional Conda channel:
 
 ```powershell
-pse "pkg" --conda-channel bioconda
+pse pkg --conda-channel bioconda
 ```
 
 Use multiple extra sources:
 
 ```powershell
-pse "pkg" --pypi-index https://download.pytorch.org/whl/cu126 --conda-channel bioconda
+pse pkg --pypi-index https://download.pytorch.org/whl/cu126 --conda-channel bioconda
 ```
 
 ## Sources
