@@ -33,6 +33,7 @@ def integer(value: str, minimum: int = 0) -> int:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
+        prog="pse",
         description="Search package names and versions across PyPI and Conda channels.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
