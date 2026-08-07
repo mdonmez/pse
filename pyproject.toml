@@ -1,0 +1,17 @@
+[project]
+name = "pse"
+version = "0.1.0"
+description = "Search Python packages across PyPI, Conda channels, and compatible indexes."
+readme = "README.md"
+authors = [
+    { name = "mdonmez", email = "124686256+mdonmez@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+pse = "pse.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
