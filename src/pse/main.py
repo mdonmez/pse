@@ -88,7 +88,7 @@ def parse_args() -> argparse.Namespace:
         help="Cache lifetime in seconds.",
     )
     parser.add_argument("--json", action="store_true", help="Output one JSON document.")
-    parser.add_argument("--version", action="version", version=f"pse.py {VERSION}")
+    parser.add_argument("--version", action="version", version=f"pse {VERSION}")
     return parser.parse_args()
 
 

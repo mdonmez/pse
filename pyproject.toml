@@ -1,13 +1,30 @@
 [project]
 name = "pse"
-version = "0.1.1"
+version = "0.1.2"
 description = "Search Python packages across PyPI, Conda channels, and compatible indexes."
 readme = "README.md"
 authors = [
     { name = "mdonmez", email = "124686256+mdonmez@users.noreply.github.com" }
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 dependencies = []
+keywords = ["python", "package", "search", "pypi", "conda"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+
+[project.urls]
+Homepage = "https://github.com/mdonmez/pse"
+Repository = "https://github.com/mdonmez/pse"
+Issues = "https://github.com/mdonmez/pse/issues"
 
 [project.scripts]
 pse = "pse.main:main"

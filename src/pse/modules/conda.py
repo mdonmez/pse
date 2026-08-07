@@ -18,6 +18,7 @@ from .common import (
     parallel,
     rank,
     result,
+    version_key,
 )
 
 
@@ -101,6 +102,7 @@ def search(
         for package in sorted(
             groups[(source, name)],
             key=lambda item: (
+                version_key(str(item.get("version", ""))),
                 int(item.get("timestamp") or 0),
                 int(item.get("build_number") or 0),
             ),

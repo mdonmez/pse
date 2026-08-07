@@ -15,7 +15,10 @@ packages without installing packages or using a package manager at runtime.
 
 ### Using `pse` on-the-fly
 
-You can run `pse` directly with `uvx`, `pipx` or `pixi exec` for a quick search without installing anything.
+You can run `pse` directly with `uvx`, `pipx` or `pixi exec` without a permanent install.
+
+<details>
+<summary>uvx</summary>
 
 ```powershell
 uvx pse pkg
@@ -36,7 +39,7 @@ pipx run pse pkg
 <summary>pixi exec</summary>
 
 ```powershell
-pixi exec pse pkg
+pixi exec -s uv uvx pse pkg
 ```
 
 </details>
@@ -98,7 +101,7 @@ historical Conda package version.
 
 ## JSON output
 
-`pse` can produce structured JSON output for programmatic consumption and agent friendly use. The JSON output contains a `results` array with one entry per source. Each entry contains the source name, package name, and an array of available versions.:
+`pse` can produce structured JSON output for programmatic consumption and agent friendly use. The JSON output contains a `results` array with one entry per source. Each entry contains the source name, package name, and an array of available versions:
 
 ```json
 {
